@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Colocar un formulario de registro que cada vez que le demos agregar
+        añadirá una nueva fila en una tabla
+    -->
+    <form action="">
+        <div>
+            <label for="">Producto</label>
+            <input type="text" id="txtProducto">
+        </div>
+        <div>
+            <label for="">Precio</label>
+            <input type="number" id="txtPrecio">
+        </div>
+        <div>
+            <label for="">Existencia</label>
+            <input type="number" id="txtExistencia" value="0">
+        </div>
+        <button type="button" id="btnAgregar">Agregar</button>
+        <button type="reset">Limpiar</button>
+        <button type="button" id="btnReporte">Generar reporte</button>
+    </form>
+    <table id="tblProductos">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Existencia</th>
+                <th>Operaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <div id="reporte">
+        <h3>Reporte de inventario</h3>
+    </div>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/Validador.js"></script>
+</body>
+</html>
